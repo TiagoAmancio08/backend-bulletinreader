@@ -30,8 +30,7 @@ def processar():
 
         # Retorna URL completa para facilitar download direto
         nome_saida = os.path.basename(caminho_saida)
-        url_download = f"http://192.168.2.7:5000/uploads/{nome_saida}"
-
+        url_download = f"https://backend-bulletinreader-production.up.railway.app/uploads/{nome_saida}"
 
         return jsonify({"url": url_download}), 200
 
